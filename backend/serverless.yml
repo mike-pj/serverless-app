@@ -29,7 +29,7 @@ provider:
     ATTACHMENT_S3_BUCKET: serverless-c4-todo-app-images-${self:provider.stage}
     SIGNED_URL_EXPIRATION: 300
     PROJECT_NAME: serverless-todo-app
-    INDEX_NAME: {self:provider.environment.TODOS_CREATED_AT_INDEX}
+    INDEX_NAME: ${self:provider.environment.TODOS_CREATED_AT_INDEX}
 
   logs:
     # Enable API Gateway logs
